@@ -1,95 +1,96 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-    <title>HTML Assignment 3</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        table.middle {
-            border: 1px solid black;
-            border-spacing: 1px;
-        }
-        td {
-            border: 1px solid black;
-            padding: 1px;
-        }
-        .center {
-            text-align: center;
-        }
-        .right {
-            text-align: right;
-        }
-        .green {
-            background-color: green;
-        }
-        .blue {
-            background-color: blue;
-        }
-    </style>
+	<title>HTML Assignment 3</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+	<script type="text/javascript" src="./script.js"></script>
 
 <h2 style="text-align:center;">HTML Assignment #3</h2>
 
-<!-- Table 1 -->
-<table id="table-1" class="middle">
+<table id="table-1" class="middle" border="1" width="100%">
     <tr>
         <td id="t11">left</td>
-        <td id="t12">center</td>
-        <td id="t13" class="right">right</td>
+        <td id="t12" style="text-align:center">center</td>
+        <td id="t13" class="right" style="text-align:right">right</td>
     </tr>
     <tr class="center">
         <td>left</td>
-        <td>center</td>
-        <td class="right">right</td>
+        <td style="text-align:center">center</td>
+        <td class="right" style="text-align:right">right</td>
     </tr>
     <tr>
         <td>left</td>
-        <td>center</td>
-        <td class="right">right</td>
+        <td style="text-align:center">center</td>
+        <td class="right" style="text-align:right">right</td>
+    </tr>
+</table>
+	
+<br>
+
+<table id="table-2" class="middle" border="1">
+    <tr>
+        <td id="t21" colspan="6" style="height:30px; width:1000px;"></td>
+    </tr>
+
+    <tr>
+        <td colspan="6" style="height:30px; width:30px;"></td>
+    </tr>
+
+    <tr style="height:30px; width:30px;">
+        <td rowspan="4" style="height:30px; width:30px;"></td>
+        <td style="height:30px; width:30px;"></td>
+        <td style="height:30px; width:30px;"></td>
+        <td style="height:30px; width:30px;"></td>
+        <td style="height:30px; width:30px;"></td>
+        <td style="height:30px; width:30px;"></td>
+    </tr>
+
+    <tr style="height:30px; width:30px;">
+        <td style="height:30px; width:30px;"></td>
+        <td rowspan="2" colspan="3" style="height:30px; width:30px;"></td>
+        <td style="height:30px; width:30px;"></td>
+    </tr>
+
+    <tr style="height:30px; width:30px;">
+        <td style="height:30px; width:30px;"></td>
+        <td style="height:30px; width:30px;"></td>
+    </tr>
+
+    <tr style="height:30px; width:30px;">
+        <td style="height:30px; width:30px;"></td>
+        <td style="height:30px; width:30px;"></td>
+        <td style="height:30px; width:30px;"></td>
+        <td style="height:30px; width:30px;"></td>
+        <td style="height:30px; width:30px;"></td>
+        <td style="height:30px; width:30px;"></td>
+    </tr>
+
+    <tr>
+        <td colspan="6" style="height:30px; width:30px;"></td>
     </tr>
 </table>
 
 <br>
 
-<!-- Table 2 -->
-<table id="table-2" class="middle">
-    <tr>
-        <td id="t21" colspan="6"></td>
-    </tr>
-    <tr>
-        <td></td><td></td><td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td></td><td></td><td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td></td><td></td><td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td></td><td></td><td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td></td><td></td><td></td><td></td><td></td><td></td>
-    </tr>
-</table>
-
-<br>
-
-<!-- Table 3 -->
-<table id="table-3" class="middle">
+<table id="table-3" class="middle" border="1">
     <tr class="green">
-        <td></td>
+        <td style="height:20px; width:1000px"></td>
     </tr>
     <tr>
-        <td id="t-image" class="center">
+        <td id="t-image" style="text-align:center;">
             <img src="https://www2.d125.ord/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra Portfolio/images-1.jpeg">
         </td>
     </tr>
     <tr class="blue">
-        <td></td>
+        <td style="height:20px; width:1000px"></td>
     </tr>
 </table>
 
 </body>
+
 </html>
